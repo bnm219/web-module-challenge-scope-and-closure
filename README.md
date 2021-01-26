@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+A closure involves two functions.  One function is typically used to a return a value needed in the second function.  The secon function calls the first function for the returned value and continues its calculation from there.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +66,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+Line 59 and 61.  I can tell because of how they are being invoked as new functions on line 64 and 65. (one funcion is using another fucntion to find a result.)
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+We could put dansRoll into a for loop instead of calling them one by one.  Dan's name will always be the same.
 c. What is the lexical scope of `newRoll`? 
+newRoll can only be accessed within the personalDice function.
 
 
 ### Task 3 - Stretch Goals
